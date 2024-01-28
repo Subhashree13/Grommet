@@ -90,7 +90,7 @@ function Header() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              <Link to ='/about' element = {<About/>} >
+              <Link to ='/about' element = {<About/>}  id = "header-nav-options">
               About
               </Link>
               <Link to ='/contactus' element = {<Contact/>}>

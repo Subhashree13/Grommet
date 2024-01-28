@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
+import { TechCard } from './MainCardStyled';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -64,7 +64,7 @@ export default function MediaCard() {
   return (
     <>
   {techStacks.map(item=>
-  <Card sx={{ maxWidth: 345 }} id = {item.id}>
+  <TechCard sx={{ maxWidth: 345 }} id = {item.id}>
       <CardMedia
         sx={{ height: 140 }}
         image={item.image}
@@ -82,7 +82,7 @@ export default function MediaCard() {
       <Rating name="read-only" value={item.rating} readOnly />
         <Link href={item.href}>Learn More</Link>
       </CardActions>
-    </Card>)}
+    </TechCard>)}
     </>
    
     
